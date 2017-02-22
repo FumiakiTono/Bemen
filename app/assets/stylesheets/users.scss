@@ -1,35 +1,77 @@
-#header{
-  width: 100%;
-  background-color: blue;
-}
-
-#headerIn{
+#content{
   width: 1000px;
-  margin: auto;
-  height: 66px;
-  position: relative;
-  overflow: hidden;
-}
+  height: 1000px;
+  margin: 0 auto;
 
+  .content__concept{
 
-.siteId{
-  display: block;
-  height: 30px;
-  position: absolute;
-  top: 18px;
-  width: 136px;
-}
+    .message{
+      width: 750px;
+      height: 300px;
+      float: left;
+      padding: 50px;
+      box-sizing: border-box;
 
-.findHeaderForm{
-  position: absolute;
-  top: 15px;
-  left: 158px;
-}
+      p{
+        font-size: 24px;
+      }
+    }
 
-#navigation{
-  position: absolute;
-  right: 0;
-  line-height: 66px;
-  color: #fff;
-  font-size: 30px;
+    .photo{
+      width: 250px;
+      height: 300px;
+      float: left;
+      background-color: black;
+
+      .photo__man{
+        width: 250px;
+        height: 300px;
+      }
+    }
+  }
+
+  .content__search{
+    width: 1000px;
+    height: 100px;
+    clear: both;
+    background-color: white;
+
+    .content__search-input{
+      position: relative;
+      left: 200px;
+      top: 10px;
+      width: 350px;
+      height: 50px;
+    }
+
+    .content__search-submit{
+      position: relative;
+      left: 195px;
+      top: 29px;
+      width: 150px;
+      height: 54px;
+      background-color: #5bc0de;
+      border-color: #46b8da;
+    }
+  }
+
+  .content__mens{
+    width: 1000px;
+    height: 600px;
+    box-sizing: border-box;
+
+    #titleMens{
+      width: 1000px;
+      height: 50px;
+    }
+
+    .man{
+      width: 200px;
+      height: 250px;
+      float: left;
+      margin-left: 40px;
+      margin-bottom: 20px;
+      background-color: #5bc0de;
+    }
+  }
 }
