@@ -1,0 +1,29 @@
+#header{
+  width: 100%;
+  background-color: #5bc0de;
+  height: 66px;
+
+  #header__logo{
+    display: block;
+    height: 30px;
+    position: absolute;
+    top: 18px;
+    width: 136px;
+  }
+
+  #header__nav{
+    float: right;
+    line-height: 66px;
+    color: #fff;
+
+    ul{
+      list-style: none;
+
+      li{
+        float: left;
+        margin-left: 28px;
+        margin-top: -1px;
+      }
+    }
+  }
+}
