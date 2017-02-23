@@ -1,5 +1,7 @@
 %main#content
   .content__user
     #titleUser.title ユーザー情報
-    .userPhoto ユーザーの写真
+    .userPhoto
+      = image_tag current_user.image
     .userDescription ユーザーの詳細
+    = link_to "ユーザー情報を編集する", edit_user_path(current_user.id)
