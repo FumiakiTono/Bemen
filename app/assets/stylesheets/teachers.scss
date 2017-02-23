@@ -1,0 +1,125 @@
+///////////////////
+///teachers/show///
+///////////////////
+
+
+#content{
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+
+  .content__teacher-profile{
+    width: 1000px;
+    height: 300px;
+    box-sizing: border-box;
+
+    .teacher-photo{
+      width: 500px;
+      height: 300px;
+      float: left;
+      padding: 50px;
+      box-sizing: border-box;
+
+      p{
+        font-size: 24px;
+      }
+    }
+
+    .teacher-introduction{
+      width: 500px;
+      height: 300px;
+      float: left;
+      padding: 50px;
+      box-sizing: border-box;
+    }
+  }
+
+  .content__teacher-past{
+    width: 1000px;
+    height: 300px;
+    box-sizing: border-box;
+
+    #titlePast{
+      width: 1000px;
+      height: 50px;
+    }
+
+    .man{
+      width: 200px;
+      height: 250px;
+      float: left;
+      margin-left: 40px;
+      margin-bottom: 20px;
+      background-color: #5bc0de;
+    }
+  }
+}
+
+
+////////////////////
+///teachers/index///
+////////////////////
+
+
+#content{
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+
+  .content__teachers{
+    width: 1000px;
+    height: 300px;
+    box-sizing: border-box;
+
+    .man{
+      width: 200px;
+      height: 250px;
+      float: left;
+      margin-left: 40px;
+      margin-bottom: 20px;
+      background-color: #5bc0de;
+    }
+  }
+}
+
+
+//////////////////
+///teachers/new///
+//////////////////
+
+
+#content{
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+
+  .content__teacher--signIn{
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+
+
+////////////////////
+///teachers/edit///
+////////////////////
+
+
+#content{
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+
+  .content__teacher--edit{
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}

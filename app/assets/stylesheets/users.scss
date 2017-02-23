@@ -1,3 +1,7 @@
+/////////////////
+///users/index///
+/////////////////
+
 #content{
   width: 1000px;
   height: 1000px;
@@ -73,5 +77,81 @@
       margin-bottom: 20px;
       background-color: #5bc0de;
     }
+  }
+}
+
+
+////////////////
+///users/show///
+////////////////
+
+#content{
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+
+  .content__user{
+
+    .userPhoto{
+      width: 500px;
+      height: 300px;
+      float: left;
+      padding: 50px;
+      box-sizing: border-box;
+
+      p{
+        font-size: 24px;
+      }
+    }
+
+    .userDescription{
+      width: 500px;
+      height: 300px;
+      float: left;
+      padding: 50px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+
+////////////////
+///users/show///
+////////////////
+
+
+#content{
+  width: 1000px;
+  height: 700px;
+  margin: 0 auto;
+
+  .content__user--signIn{
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+
+
+////////////////
+///users/show///
+////////////////
+
+
+#content{
+  width: 1000px;
+  height: 700px;
+  margin: 0 auto;
+
+  .content__user--edit{
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
   }
 }
