@@ -20,6 +20,7 @@ Things you may want to cover:
 |:---|:-----|:------|
 |name|string|not null, index|
 |image|string||
+|age|integer|not null|
 |email|string|unique, not null|
 |password|string|not null|
 - has_many :messages
@@ -30,7 +31,10 @@ Things you may want to cover:
 |カラム名|型|オプション|
 |:---|:-----|:------|
 |name|string|index, not null|
+|image|string||
 |age|integer|not null|
+|email|string|unique, not null|
+|password|string|not null|
 - has_many :messages
 - has_many :reviews
 - has_many :posts
