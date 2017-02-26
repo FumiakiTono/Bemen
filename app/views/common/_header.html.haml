@@ -12,8 +12,17 @@
           = link_to "マイページ", user_path(current_user.id)
         %li.menu__list
           = link_to "ログアウト", destroy_user_session_path, method: :delete
+      - elsif teacher_signed_in?
+        %li.menu__list
+          = link_to "マイページ", teacher_path(current_teacher.id)
+        %li.menu__list
+          = link_to "ログアウト", destroy_teacher_session_path, method: :delete
       - else
         %li.menu__list
-          = link_to "ログイン", new_user_session_path
+          = link_to "ユーザーとしてログイン", new_user_session_path
         %li.menu__list
-          = link_to "新規登録", new_user_registration_path
+          = link_to "ユーザーとして新規登録", new_user_registration_path
+        %li.menu__list
+          = link_to "ティーチャーとしてログイン", new_teacher_session_path
+        %li.menu__list
+          = link_to "ティーチャーとして新規登録", new_teacher_registration_path
