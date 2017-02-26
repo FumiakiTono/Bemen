@@ -1,12 +1,7 @@
 %main#content
-  .content__teacher-profile
-    .teacher-photo
-      %p 写真
-    .teacher-introduction
-      %p 自己紹介
-  .content__teacher-past
-    #titlePast.title 過去の実績
-    .man
-    .man
-    .man
-    .man
+  .content__user
+    #titleUser.title ユーザー情報
+    .userPhoto
+      / = image_tag current_teacher.images
+    .userDescription ユーザーの詳細
+    = link_to "ティーチャー情報を編集する", edit_user_path(current_teacher.id)
