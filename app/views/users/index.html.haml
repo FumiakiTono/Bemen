@@ -11,6 +11,11 @@
   .content__mens
     #titleMens.title イケメンズ一覧
     .man
+      - @posts.each do |post|
+        = post.teacher.name
+        = post.title
+        = post.image
+        = post.detail
     .man
     .man
     .man
