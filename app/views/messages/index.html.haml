@@ -1,5 +1,7 @@
 %main#content
-  .content__message
-    #message--index.message
-    #message--display.message
-    #message__men-profile.message
+  .message
+    #message-title メッセージ
+    #message-content
+      %ul.messagelist
+        - @messages.each do |message|
+          = render partial: "message", locals: { message: message }
