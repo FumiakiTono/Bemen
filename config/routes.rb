@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   devise_for :teachers, controllers: {
-    sessions:  "teachers/sessions",
-    passwords: "teachers/passwords",
-    sessions:  "teachers/registrations"
+    sessions:        "teachers/sessions",
+    passwords:       "teachers/passwords",
+    registratrions:  "teachers/registrations"
   }
   devise_for :users, controllers: {
-    sessions:  "users/sessions",
-    passwords: "users/passwords",
-    sessions:  "users/registrations"
+    sessions:        "users/sessions",
+    passwords:       "users/passwords",
+    registrations:   "users/registrations"
   }
   root "users#index"
   resources   :users,      only: [:index, :show, :edit, :update]
