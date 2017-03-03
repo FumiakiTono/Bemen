@@ -1,25 +1,34 @@
-%main#content
-  .content__concept
-    .message
-      %p メンズ美容革命始まる。
-      %p 自分だけのキレイを手に入れよう。
-    .photo
-      = image_tag "http://img.hadalove.jp/wp-content/uploads/2016/02/264059809cba38f25b29d30f38bdee46.jpg", class: "photo__man"
-  = form_tag search_posts_path, method: :get, class: "content__search" do
-    %input.content__search-input{ type: "text", name: "keyword", placeholder: "'キレイ'を探そう"}
-    %input.content__search-submit{ type: "submit", value: ""}
-  .content__mens
+%main#content.container
+  .content__concept.row
+    .message.col-xs-9
+    .photo.col-xs-3
+      .photo__man
+      / = image_tag "http://img.hadalove.jp/wp-content/uploads/2016/02/264059809cba38f25b29d30f38bdee46.jpg", class: "photo__man"
+  = form_tag search_posts_path, method: :get, class: "content__search row" do
+    .col-md-9
+      %input.form-control{ type: "text", name: "keyword", placeholder: "'キレイ'を探そう"}
+    .col-md-3
+      %input.btn{ type: "submit", value: ""}
+  .content__mens.row
     #titleMens.title イケメンズ一覧
-    .man
-      - @posts.each do |post|
-        = post.teacher.name
-        = post.title
-        = post.image
-        = post.detail
-    .man
-    .man
-    .man
-    .man
-    .man
-    .man
-    .man
+    .man.col-md-3.col-sm-6
+      .manIn
+        - @posts.each do |post|
+          = post.teacher.name
+          = post.title
+          = post.image
+          = post.detail
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
