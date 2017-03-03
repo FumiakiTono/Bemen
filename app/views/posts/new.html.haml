@@ -1,12 +1,15 @@
-%main#content
+%main#content.container
   .content__post
     #titlePost.title キレイを投稿する
-    = form_for @post, class: "postcreate" do |f|
-      = f.label :title
-      = f.text_field :title
-      = f.label :image
-      = f.file_field :image
-      = f.label :detail
-      = f.text_field :detail
-      = f.hidden_field :teacher_id, value: current_teacher.id
+    = form_for @post, class: "postcreate row" do |f|
+      .form-group
+        = f.label :title
+        = f.text_field :title, class: "form-control"
+      .form-group
+        = f.label :image
+        = f.file_field :image
+      .form-group
+        = f.label :detail
+        = f.text_field :detail, class: "form-control"
+      / = f.hidden_field :teacher_id, value: current_teacher.id
       = f.submit "投稿する"
