@@ -4,17 +4,17 @@
 
 
 #content{
-  width: 1000px;
-  height: 1000px;
+  // width: 1000px;
+  // height: 1000px;
   margin: 0 auto;
 
   .content__teacher-profile{
-    width: 1000px;
+    // width: 1000px;
     height: 300px;
     box-sizing: border-box;
 
     .teacher-photo{
-      width: 500px;
+      // width: 500px;
       height: 300px;
       float: left;
       padding: 50px;
@@ -26,7 +26,7 @@
     }
 
     .teacher-introduction{
-      width: 500px;
+      // width: 500px;
       height: 300px;
       float: left;
       padding: 50px;
@@ -35,17 +35,17 @@
   }
 
   .content__teacher-past{
-    width: 1000px;
+    // width: 1000px;
     height: 300px;
     box-sizing: border-box;
 
     #titlePast{
-      width: 1000px;
+      // width: 1000px;
       height: 50px;
     }
 
     .man{
-      width: 200px;
+      // width: 200px;
       height: 250px;
       float: left;
       margin-left: 40px;
@@ -62,22 +62,27 @@
 
 
 #content{
-  width: 1000px;
-  height: 1000px;
+  // width: 1000px;
+  // height: 1000px;
   margin: 0 auto;
 
-  .content__teachers{
-    width: 1000px;
-    height: 300px;
+  .content__mens{
+    // width: 1000px;
+    // height: 300px;
     box-sizing: border-box;
 
     .man{
-      width: 200px;
-      height: 250px;
-      float: left;
-      margin-left: 40px;
-      margin-bottom: 20px;
-      background-color: #5bc0de;
+      // width: 200px;
+      // height: 250px;
+      padding: 15px;
+      // float: left;
+      // margin-left: 40px;
+      // margin-bottom: 20px;
+
+      .manIn{
+        height: 250px;
+        background-color: #5bc0de;
+      }
     }
   }
 }
@@ -89,8 +94,8 @@
 
 
 #content{
-  width: 1000px;
-  height: 1000px;
+  // width: 1000px;
+  // height: 1000px;
   margin: 0 auto;
 
   .content__teacher--signIn{
@@ -110,8 +115,8 @@
 
 
 #content{
-  width: 1000px;
-  height: 1000px;
+  // width: 1000px;
+  // height: 1000px;
   margin: 0 auto;
 
   .content__teacher--edit{
