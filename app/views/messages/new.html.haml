@@ -1,13 +1,15 @@
-%main#content
-  .message
+%main#content.container
+  .message.row
     #message-content
       メッセージ
       %ul.messagelist
         %li.message
-  = form_for [@teacher, @message], class: "message-form" do |f|
-    .message-body
-      = f.text_field :body, placeholder: "type a message", class: "message-type"
+  = form_for [@teacher, @message], class: "message-form row" do |f|
+    .message-body.form-group.col-md-5
+      %label
+        = f.text_field :body, placeholder: "type a message", class: "message-type form-control"
+    .message-body.form-group.col-md-4
       %label.message-form__file
         = f.file_field :image
         / %i.fa.fa-photo.icon-photo
-    = f.submit "送る", class: "send-button"
+    = f.submit "送る", class: "send-button .col-md-3"

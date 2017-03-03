@@ -1,16 +1,13 @@
-%main#content
+%main#content.container
   .content__mens
     #titleMens.title イケメンズ一覧
-    .man
+    .man.row
       - @posts.each do |post|
-        = post.teacher.name
-        = post.title
-        = post.image
-        = post.detail
-    .man
-    .man
-    .man
-    .man
-    .man
-    .man
-    .man
+        .col-md-3
+          = post.teacher.name
+        / .col-ms-3
+        /   = post.image
+        .col-md-4
+          = post.title
+        .col-md-5
+          = post.detail

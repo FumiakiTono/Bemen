@@ -3,18 +3,18 @@
 /////////////////
 
 #content{
-  width: 1000px;
-  height: 1000px;
+  // width: 1000px;
+  // height: 1000px;
   margin: 0 auto;
 
   .content__concept{
 
     .message{
-      width: 750px;
+      // width: 750px;
       height: 300px;
       float: left;
-      padding: 50px;
-      box-sizing: border-box;
+      // padding: 50px;
+      // box-sizing: border-box;
 
       p{
         font-size: 24px;
@@ -22,60 +22,60 @@
     }
 
     .photo{
-      width: 250px;
-      height: 300px;
-      float: left;
-      background-color: black;
+      // width: 250px;
+      // height: 300px;
 
       .photo__man{
-        width: 250px;
+        // width: 250px;
         height: 300px;
+        background-color: #5bc0de;
       }
     }
   }
 
   .content__search{
-    width: 1000px;
+    // width: 1000px;
     height: 100px;
     clear: both;
     background-color: white;
 
-    .content__search-input{
-      position: relative;
-      left: 200px;
-      top: 10px;
-      width: 350px;
-      height: 50px;
-    }
+    // .content__search-input{
+    //   position: relative;
+    //   left: 200px;
+    //   top: 10px;
+    //   // width: 350px;
+    //   height: 50px;
+    // }
 
-    .content__search-submit{
-      position: relative;
-      left: 195px;
-      top: 29px;
-      width: 150px;
-      height: 54px;
-      background-color: #5bc0de;
-      border-color: #46b8da;
-    }
+    // .content__search-submit{
+    //   position: relative;
+    //   left: 195px;
+    //   top: 29px;
+    //   // width: 150px;
+    //   height: 54px;
+    //   background-color: #5bc0de;
+    //   border-color: #46b8da;
+    // }
   }
 
   .content__mens{
-    width: 1000px;
+    // width: 1000px;
     height: 600px;
     box-sizing: border-box;
 
     #titleMens{
-      width: 1000px;
+      // width: 1000px;
       height: 50px;
     }
 
     .man{
-      width: 200px;
-      height: 250px;
-      float: left;
-      margin-left: 40px;
-      margin-bottom: 20px;
-      background-color: #5bc0de;
+      // width: 200px;
+      padding: 15px;
+
+      .manIn{
+        background-color: #5bc0de;
+        height: 250px;
+      }
     }
   }
 }
@@ -86,14 +86,14 @@
 ////////////////
 
 #content{
-  width: 1000px;
-  height: 1000px;
+  // width: 1000px;
+  // height: 1000px;
   margin: 0 auto;
 
   .content__user{
 
     .userPhoto{
-      width: 500px;
+      // width: 500px;
       height: 300px;
       float: left;
       padding: 50px;
@@ -105,7 +105,7 @@
     }
 
     .userDescription{
-      width: 500px;
+      // width: 500px;
       height: 300px;
       float: left;
       padding: 50px;
@@ -121,12 +121,12 @@
 
 
 #content{
-  width: 1000px;
-  height: 700px;
+  // width: 1000px;
+  // height: 700px;
   margin: 0 auto;
 
   .content__user--signIn{
-    width: 500px;
+    // width: 500px;
     height: 300px;
     padding: 50px;
     margin: auto;
@@ -142,12 +142,12 @@
 
 
 #content{
-  width: 1000px;
-  height: 700px;
+  // width: 1000px;
+  // height: 700px;
   margin: 0 auto;
 
   .content__user--edit{
-    width: 500px;
+    // width: 500px;
     height: 300px;
     padding: 50px;
     margin: auto;

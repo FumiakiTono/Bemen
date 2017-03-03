@@ -1,2 +1,32 @@
-%main#content
-  .content__user--edit ユーザー情報を編集する
+%main#content.container
+  %h2 ユーザー情報を編集する
+  = form_for user_path(current_user.id), class: "row" do |f|
+    .field.form-group
+      = f.label :name
+      %br/
+      = f.text_field :name, value: current_user.name, class: "form-control"
+    .field.form-group
+      = f.label :age
+      %br/
+      = f.text_field :age, value: current_user.age, class: "form-control"
+    .field.form-group
+      = f.label :email
+      %br/
+      = f.email_field :email, value: current_user.email, class: "form-control"
+    .field.form-group
+      = f.label :password
+      - if @validatable
+        %em
+          (#{@minimum_password_length} characters minimum)
+      %br/
+      = f.password_field :password, autocomplete: "off", class: "form-control"
+    .field.form-group
+      = f.label :password_confirmation
+      %br/
+      = f.password_field :password_confirmation, autocomplete: "off", class: "form-control"
+    .field.form-group
+      = f.label :image
+      %br/
+      = f.file_field :image
+    .actions
+      = f.submit "編集する", class: "btn"
