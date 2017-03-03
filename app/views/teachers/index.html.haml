@@ -1,0 +1,26 @@
+#content.container
+  .content__mens.row
+    #titleMens.title ティーチャー一覧
+    .man.col-md-3.col-sm-6
+      .manIn
+        - @teachers.each do |teacher|
+          .col-md-5
+            = teacher.name
+          .col-md-4
+            = image_tag teacher.image
+          .col-md-3
+            = teacher.age
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
+    .man.col-md-3.col-sm-6
+      .manIn
