@@ -1,0 +1,10 @@
+.content#container
+  %h2 申込内容を確認する
+  %p 金額
+  %p 3,000円
+  %p 支払い方法
+  %form.checkBtn{ action: "/teachers/pay", method: :post}
+    %script.webpay-button{"data-key" => "#{ENV["webpay_public_key"]}", "data-lang" => "ja", src: "https://checkout.webpay.jp/v3/", "data-text" => "カッコイイを予約する" }
+    %input{ type: "hidden", name: "customer_id", value: current_user.customer_id}
+    %input{ type: "hidden", name: "current_user_id", value: current_user.id }
+    %input{ type: "hidden", name: "teacher_id", value: params[:id] }
