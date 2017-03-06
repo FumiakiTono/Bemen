@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170301052134) do
+ActiveRecord::Schema.define(version: 20170306070437) do
 
   create_table "favorites", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user_id"
@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(version: 20170301052134) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "image"
+    t.integer  "price"
     t.index ["email"], name: "index_teachers_on_email", unique: true, using: :btree
     t.index ["name"], name: "index_teachers_on_name", using: :btree
     t.index ["reset_password_token"], name: "index_teachers_on_reset_password_token", unique: true, using: :btree
@@ -94,6 +95,7 @@ ActiveRecord::Schema.define(version: 20170301052134) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.string   "customer_id"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["name"], name: "index_users_on_name", using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
