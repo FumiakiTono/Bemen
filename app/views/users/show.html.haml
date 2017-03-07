@@ -1,11 +1,12 @@
 %main#content.container
   .content__user
-    #titleUser.title ティーチャーー情報
-    .row
+    %h2#titleUser.title ユーザー情報
+    .userDetail.row
       .col-md-5
         = image_tag current_user.image
       .col-md-4
         = current_user.name
       .col-md-3
         = current_user.age
-    = link_to "ティーチャー情報を編集する", edit_user_path(current_user.id)
+    .userLink
+      = link_to "ユーザー情報を編集する", edit_user_path(current_user.id)
