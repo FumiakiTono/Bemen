@@ -4,53 +4,18 @@
 
 
 #content{
-  // width: 1000px;
-  // height: 1000px;
-  margin: 0 auto;
 
-  .content__teacher-profile{
-    // width: 1000px;
-    height: 300px;
-    box-sizing: border-box;
+  .content__user{
+    background-color: #5bc0de;
 
-    .teacher-photo{
-      // width: 500px;
-      height: 300px;
-      float: left;
-      padding: 50px;
-      box-sizing: border-box;
-
-      p{
-        font-size: 24px;
-      }
+    .teacherInfo{
+      height: 200px;
+      text-align: center;
     }
 
-    .teacher-introduction{
-      // width: 500px;
-      height: 300px;
-      float: left;
-      padding: 50px;
-      box-sizing: border-box;
-    }
-  }
-
-  .content__teacher-past{
-    // width: 1000px;
-    height: 300px;
-    box-sizing: border-box;
-
-    #titlePast{
-      // width: 1000px;
-      height: 50px;
-    }
-
-    .man{
-      // width: 200px;
-      height: 250px;
-      float: left;
-      margin-left: 40px;
-      margin-bottom: 20px;
-      background-color: #5bc0de;
+    .teacherEdit{
+      height: 100px;
+      text-align: center;
     }
   }
 }
@@ -62,26 +27,25 @@
 
 
 #content{
-  // width: 1000px;
-  // height: 1000px;
-  margin: 0 auto;
 
   .content__mens{
-    // width: 1000px;
-    // height: 300px;
     box-sizing: border-box;
 
     .man{
-      // width: 200px;
-      // height: 250px;
       padding: 15px;
-      // float: left;
-      // margin-left: 40px;
-      // margin-bottom: 20px;
 
       .manIn{
         height: 250px;
         background-color: #5bc0de;
+
+        .manProfile{
+          height: 200px;
+          text-align: center;
+        }
+
+        .manPay{
+          text-align: center;
+        }
       }
     }
   }
@@ -94,8 +58,6 @@
 
 
 #content{
-  // width: 1000px;
-  // height: 1000px;
   margin: 0 auto;
 
   .content__teacher--signIn{
@@ -115,16 +77,16 @@
 
 
 #content{
-  // width: 1000px;
-  // height: 1000px;
-  margin: 0 auto;
 
-  .content__teacher--edit{
-    width: 500px;
-    height: 300px;
-    padding: 50px;
-    margin: auto;
-    text-align: center;
-    box-sizing: border-box;
+  .teacher--edit{
+
+    .actions{
+
+      .btn{
+        display: block;
+        margin: 0 auto;
+      }
+    }
   }
+
 }

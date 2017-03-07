@@ -3,18 +3,13 @@
 /////////////////
 
 #content{
-  // width: 1000px;
-  // height: 1000px;
   margin: 0 auto;
 
   .content__concept{
 
     .message{
-      // width: 750px;
       height: 300px;
       float: left;
-      // padding: 50px;
-      // box-sizing: border-box;
 
       p{
         font-size: 24px;
@@ -22,11 +17,8 @@
     }
 
     .photo{
-      // width: 250px;
-      // height: 300px;
 
       .photo__man{
-        // width: 250px;
         height: 300px;
         background-color: #5bc0de;
       }
@@ -34,42 +26,30 @@
   }
 
   .content__search{
-    // width: 1000px;
     height: 100px;
     clear: both;
     background-color: white;
 
-    // .content__search-input{
-    //   position: relative;
-    //   left: 200px;
-    //   top: 10px;
-    //   // width: 350px;
-    //   height: 50px;
-    // }
+    .formSearch{
+      position: relative;
+      top: 10px;
+    }
 
-    // .content__search-submit{
-    //   position: relative;
-    //   left: 195px;
-    //   top: 29px;
-    //   // width: 150px;
-    //   height: 54px;
-    //   background-color: #5bc0de;
-    //   border-color: #46b8da;
-    // }
+    .btn{
+      display: block;
+      margin: 12px auto;
+      width: 200px;
+    }
   }
 
   .content__mens{
-    // width: 1000px;
-    height: 600px;
     box-sizing: border-box;
 
     #titleMens{
-      // width: 1000px;
       height: 50px;
     }
 
     .man{
-      // width: 200px;
       padding: 15px;
 
       .manIn{
@@ -86,72 +66,40 @@
 ////////////////
 
 #content{
-  // width: 1000px;
-  // height: 1000px;
   margin: 0 auto;
 
   .content__user{
 
-    .userPhoto{
-      // width: 500px;
-      height: 300px;
-      float: left;
-      padding: 50px;
-      box-sizing: border-box;
-
-      p{
-        font-size: 24px;
-      }
+    #titleUser{
+      text-align: center;
     }
 
-    .userDescription{
-      // width: 500px;
-      height: 300px;
-      float: left;
-      padding: 50px;
-      box-sizing: border-box;
+    .userDetail{
+      height: 150px;
+      text-align: center;
+    }
+
+    .userLink{
+      height: 100px;
+      text-align: center;
     }
   }
 }
 
 
 ////////////////
-///users/show///
+///users/edit///
 ////////////////
 
 
 #content{
-  // width: 1000px;
-  // height: 700px;
-  margin: 0 auto;
 
-  .content__user--signIn{
-    // width: 500px;
-    height: 300px;
-    padding: 50px;
-    margin: auto;
+  h2{
     text-align: center;
-    box-sizing: border-box;
   }
-}
 
-
-////////////////
-///users/show///
-////////////////
-
-
-#content{
-  // width: 1000px;
-  // height: 700px;
-  margin: 0 auto;
-
-  .content__user--edit{
-    // width: 500px;
-    height: 300px;
-    padding: 50px;
-    margin: auto;
-    text-align: center;
-    box-sizing: border-box;
+  .btn{
+    display: block;
+    margin: 10px auto;
   }
 }
