@@ -1,11 +1,12 @@
 %main#content.container
   .content__user
-    #titleUser.title ティーチャーー情報
-    .row
+    %h2#titleUser.title ティーチャーー情報
+    .teacherInfo.row
       .col-md-5
-        = image_tag current_teacher.image
-      .col-md-4
-        = current_teacher.name
-      .col-md-3
-        = current_teacher.age
-    = link_to "ティーチャー情報を編集する", edit_teacher_path(current_teacher.id)
+        = image_tag @teacher.image
+      %h3.col-md-4
+        = @teacher.name
+      %h3.col-md-3
+        = @teacher.age
+    .teacherEdit
+      = link_to "ティーチャー情報を編集する", edit_teacher_path(@teacher.id)
