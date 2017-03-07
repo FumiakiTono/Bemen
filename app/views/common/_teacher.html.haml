@@ -1,0 +1,12 @@
+.man.col-md-3.col-sm-6
+  .manIn
+    .manProfile
+      %h3.col-md-5
+        = teacher.name
+      .col-md-4
+        = image_tag teacher.image
+      %h3.col-md-3
+        = teacher.age
+    .manPay
+      = link_to "詳細を見る", teacher_path(teacher.id)
+      = link_to "支払う", pay_teacher_path(teacher.id)
