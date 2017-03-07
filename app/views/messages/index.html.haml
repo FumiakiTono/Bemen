@@ -1,7 +1,7 @@
 %main#content.container
   .message.row
-    #message-title メッセージ
+    %h2#message-title メッセージ
     #message-content
       %ul.messagelist
-        - @messages.each do |message|
-          = render partial: "message", locals: { message: message }
+        - @teachers.each do |teacher|
+          = render partial: "message", locals: { message: teacher.messages.first }
