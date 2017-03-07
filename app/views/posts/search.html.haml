@@ -1,13 +1,6 @@
 %main#content.container
   .content__mens
-    #titleMens.title イケメンズ一覧
+    %h2#titleMens.title イケメンズ一覧
     .man.row
       - @posts.each do |post|
-        .col-md-3
-          = post.teacher.name
-        / .col-ms-3
-        /   = post.image
-        .col-md-4
-          = post.title
-        .col-md-5
-          = post.detail
+        = render partial: "common/post", locals: { post: post }

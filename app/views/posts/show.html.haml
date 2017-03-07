@@ -1,0 +1,12 @@
+%main#content.container
+  %h2#titlePost.title 投稿の情報
+  .post
+    .postContent#postIn
+      .col-md-5
+        = @post.teacher.name
+      .col-md-4
+        = @post.title
+      .col-md-3
+        = @post.image
+    .postDetail
+      = @post.detail
