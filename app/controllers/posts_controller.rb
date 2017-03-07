@@ -5,9 +5,12 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
-    @post.save
-    redirect_to new_post_path
+    Post.create(post_params)
+    redirect_to root_path
+  end
+
+  def show
+    @post = Post.find(params[:id])
   end
 
   def search
