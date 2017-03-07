@@ -13,22 +13,23 @@
     .field.form-group
       = f.label :email
       %br/
-      = f.email_field :email, class: "form-control"
+      = f.email_field :email, placeholder: "メールアドレスを入力(必須)", class: "form-control"
     .field.form-group
       = f.label :password
       - if @validatable
         %em
           (#{@minimum_password_length} characters minimum)
       %br/
-      = f.password_field :password, autocomplete: "off", class: "form-control"
+      = f.password_field :password, placeholder: "パスワードを入力(必須)", autocomplete: "off", class: "form-control"
     .field.form-group
       = f.label :password_confirmation
       %br/
-      = f.password_field :password_confirmation, autocomplete: "off", class: "form-control"
+      = f.password_field :password_confirmation, placeholder: "パスワードの確認(必須)", autocomplete: "off", class: "form-control"
     .field.form-group
       = f.label :image
       %br/
       = f.file_field :image
+      %i.fa.fa-photo.icon-photo
     .actions
       = f.submit "Sign up", class: "btn"
-  = render "devise/shared/links"
+  / = render "devise/shared/links"

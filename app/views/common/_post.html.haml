@@ -1,0 +1,13 @@
+.man#post.col-md-3.col-sm-6.container
+  .manIn#postIn
+    #postContent.row
+      .col-md-5
+        = post.teacher.name
+      .col-md-4
+        = post.title
+      .col-md-3
+        = post.image
+    #postDetail
+      = post.detail
+    #postLink
+      = link_to "詳細を見る", post_path(post.id)

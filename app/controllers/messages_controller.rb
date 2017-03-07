@@ -2,7 +2,6 @@ class MessagesController < ApplicationController
 
   def index
     @teachers = Teacher.all
-    @messages = Message.all.limit(5)
   end
 
   def new

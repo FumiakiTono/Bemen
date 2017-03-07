@@ -20,7 +20,7 @@ Rails.application.routes.draw do
       get "pay"
     end
   end
-  resources   :posts,      only: [:new, :create] do
+  resources   :posts,      only: [:new, :create, :show] do
     collection do
       get "search"
     end

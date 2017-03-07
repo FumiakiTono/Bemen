@@ -1,7 +1,9 @@
 %li.message
-  - if message.image
+  .image.col-md-5
     = message.image
-  = message.teacher.name
-  = message.body
+  .teacherName.col-md-4
+    = message.teacher.name
+  .body.col-md-3
+    = message.body
   = message.updated_at
   = link_to "メッセージを書く", new_teacher_message_path(message.teacher)

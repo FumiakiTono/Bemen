@@ -1,16 +1,70 @@
+/////////////////
+///posts////
+/////////////////
+
+
 #content{
-  // width: 1000px;
-  // height: 500px;
+
   margin: 0 auto;
 
   .content__post{
-    // width: 1000px;
     height: 300px;
     box-sizing: border-box;
 
     #titlePost{
-      // width: 1000px;
       height: 50px;
+    }
+  }
+}
+
+
+/////////////////
+///posts/show////
+/////////////////
+
+#content{
+
+  #titlePost{
+    text-align: center;
+  }
+
+  .post{
+    background-color: #5bc0de;
+    margin-bottom: 10px;
+
+    .postContent{
+      height: 150px;
+      text-align: center;
+    }
+
+    .postDetail{
+      height: 100px;
+      text-align: center;
+    }
+  }
+}
+
+/////////////////
+///common/post///
+/////////////////
+
+#post{
+
+  #postIn{
+
+    #postContent{
+      height: 80px;
+      text-align: center;
+    }
+
+    #postDetail{
+      height: 80px;
+      text-align: center;
+    }
+
+    #postLink{
+      height: 30px;
+      text-align: center;
     }
   }
 }

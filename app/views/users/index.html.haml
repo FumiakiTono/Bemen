@@ -6,29 +6,10 @@
       / = image_tag "http://img.hadalove.jp/wp-content/uploads/2016/02/264059809cba38f25b29d30f38bdee46.jpg", class: "photo__man"
   = form_tag search_posts_path, method: :get, class: "content__search row" do
     .col-md-9
-      %input.form-control{ type: "text", name: "keyword", placeholder: "'キレイ'を探そう"}
+      %input.form-control.formSearch{ type: "text", name: "keyword", placeholder: "'キレイ'を探そう"}
     .col-md-3
-      %input.btn{ type: "submit", value: ""}
+      %input.btn{ type: "submit", value: "検索"}
   .content__mens.row
-    #titleMens.title イケメンズ一覧
-    .man.col-md-3.col-sm-6
-      .manIn
-        - @posts.each do |post|
-          = post.teacher.name
-          = post.title
-          = post.image
-          = post.detail
-    .man.col-md-3.col-sm-6
-      .manIn
-    .man.col-md-3.col-sm-6
-      .manIn
-    .man.col-md-3.col-sm-6
-      .manIn
-    .man.col-md-3.col-sm-6
-      .manIn
-    .man.col-md-3.col-sm-6
-      .manIn
-    .man.col-md-3.col-sm-6
-      .manIn
-    .man.col-md-3.col-sm-6
-      .manIn
+    %h2#titleMens.title イケメンズ一覧
+    - @posts.each do |post|
+      = render partial: "common/post", locals: { post: post }
