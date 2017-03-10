@@ -9,4 +9,7 @@
       %h3.col-md-3
         = @teacher.age
     .teacherEdit
-      = link_to "ティーチャー情報を編集する", edit_teacher_path(@teacher.id)
+      - if teacher_signed_in?
+        = link_to "ティーチャー情報を編集する", edit_teacher_path(@teacher.id)
+    .writeReview
+      = link_to "レビューを書く", new_teacher_review_path(@teacher.id)
