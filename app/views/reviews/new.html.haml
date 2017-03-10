@@ -1,0 +1,10 @@
+%main.container.content
+  = form_for [@teacher, @review], class: "row form-review" do |f|
+    .form-group
+      = f.label        :評価
+      = f.number_field :rate, pladeholder: "評価", value: "1", max: "10", min: "1"
+    .form-group
+      = f.label     :body
+      = f.text_area :body, placeholder: "レビューを書いてね！", class: "form-control"
+    = f.hidden_field :user_id, value: current_user.id
+    = f.submit "レビューを投稿する", class: "btn review--submit"
